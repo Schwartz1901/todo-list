@@ -5,7 +5,44 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+
 }
+
+#root {
+  width: 80%;
+}
+
+.check-button {
+  
+  &:hover {
+    .check-icon {
+      display: inline-block;
+    }
+  }
+}
+
+.check-icon{
+
+  display: none;
+  &:hover {
+    background-color: "#e2e2e2";
+    border-radius: 3px;
+  }
+}
+
+.check-icon-enable{
+
+  &:hover {
+    background-color: "#e2e2e2";
+    border-radius: 3px;
+  }
+}
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
