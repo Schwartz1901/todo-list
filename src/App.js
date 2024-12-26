@@ -2,16 +2,13 @@
 import { Input} from "antd";
 
 import TodoList from "./components/TodoList";
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useState } from "react";
 import { v4 } from "uuid"
 function App() {
 
   const [todoList, setTodoList] = useState([]);
   const [textInput, setTextInput] = useState("");
 
-  useEffect( () => {
-    console.log(todoList) }, [todoList]
-  )
 
   const onTextInputChange = (e) => {
     setTextInput(e.target.value);

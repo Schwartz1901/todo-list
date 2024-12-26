@@ -43,6 +43,11 @@ body {
   }
 }
 
+.subtask-completed{
+  text-decoration: line-through;
+}
+
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
